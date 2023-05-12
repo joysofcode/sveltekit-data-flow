@@ -1,0 +1,32 @@
+@import '@fontsource/manrope';
+@import '@fontsource/jetbrains-mono';
+
+@import 'open-props/style';
+@import 'open-props/normalize';
+@import 'open-props/buttons';
+
+html {
+	--font-sans: 'Manrope', sans-serif;
+	--font-mono: 'JetBrains Mono', monospace;
+	--link-visited: var(--gray-0);
+	--brand: var(--red-6);
+}
+
+body {
+	padding: var(--size-7);
+}
+
+h1 {
+	margin-block: var(--size-7);
+	text-transform: capitalize;
+}
+
+a {
+	color: var(--gray-0);
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+a:hover {
+	color: var(--brand);
+}
